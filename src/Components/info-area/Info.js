@@ -11,12 +11,26 @@ const Info = (props) => {
     }
 
     const [rests , setrests] = useState([])
+    const [times, settimes] = useState([])
     useEffect(() => {
         fetch('restTimes.json')
         .then(res => res.json())
         .then(data => setrests(data))
     },[])
 
+    const addToRestArea = (id, time) => {
+        const quantity = localStorage.getItem(id);
+        const newtimes = [...times, time];
+        settimes(newtimes)
+        if (quantity) {
+            const newQuantity = parseFloat(quantity) + parseFloat(time);
+            localStorage.setItem(id, newQuantity);
+        }
+        else {
+            localStorage.setItem(id, time)
+        }
+
+    }
 
     return (
         <div className='info-bar'>
@@ -36,7 +50,8 @@ const Info = (props) => {
                         rests.map(rest => <Rest
                             key={rest.uniqueID}
                             uniqueID={rest.uniqueID}
-                            minute={rest.minute}>
+                            minute={rest.minute}
+                            addToRestArea={addToRestArea}>
                             
                             </Rest>)
                     }
@@ -51,7 +66,7 @@ const Info = (props) => {
                     </div>
                     <div className='time-count-div'>
                     <p>Rest time</p>    
-                    <p><span>00</span></p>    
+                        <p><span>{times}</span></p>    
                     </div>
                 </div>
             </div>

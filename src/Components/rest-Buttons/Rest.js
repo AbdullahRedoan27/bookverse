@@ -1,11 +1,11 @@
 import React from 'react';
 import './Rest.css'
 const Rest = (props) => {
-    console.log(props);
-    const { uniqueID, minute } = props;
+
+    const { uniqueID, minute, addToRestArea} = props;
     return (
         <div>
-            <button className='break-btn'>{minute}m</button>
+            <button onClick={()=> addToRestArea(uniqueID, minute)} className='break-btn'>{minute}m</button>
         </div>
     );
 };
