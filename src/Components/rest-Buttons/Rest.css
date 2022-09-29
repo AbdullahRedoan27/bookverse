@@ -1,0 +1,15 @@
+.break-btn{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    color: white;
+    background-color: #1279dadc;
+    padding: 10px 10px;
+    border-radius: 70%;
+}
+.break-btn:hover{
+    background-color: #0264d4a8;
+}
+.break-btn-h:hover{
+    background-color: #0264d4a8;
+}

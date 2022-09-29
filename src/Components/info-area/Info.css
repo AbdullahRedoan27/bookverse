@@ -27,32 +27,10 @@
     justify-content: center;
     margin-bottom: 5px;
 }
+
 .breaks{
     display: flex;
-    justify-content: space-evenly;
-    background-color: #12a4da15;
-    padding: 10px;
-    border-radius: 10px;
-}
-.break-btn{
-    border: none;
-    color: white;
-    background-color: #1279dadc;
-    padding: 10px 5px;
-    border-radius: 70%;
-}
-.break-btn-h{
-    border: none;
-    color: white;
-    background-color: #1279dadc;
-    padding: 10px 10px;
-    border-radius: 70%;
-}
-.break-btn:hover{
-    background-color: #0264d4a8;
-}
-.break-btn-h:hover{
-    background-color: #0264d4a8;
+    justify-content: space-around;
 }
 
 .time-count-div{

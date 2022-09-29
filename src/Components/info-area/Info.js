@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import user from '../../images/student-4.png'
 import '../info-area/Info.css'
+import Rest from '../rest-Buttons/Rest';
 
 const Info = (props) => {
-    console.log(props);
     const { carts } = props;
     let reqTime = 0;
     for (const cart of carts) {
         reqTime = reqTime + parseFloat(cart.time)
-        console.log(cart.time)
     }
+
+    const [rests , setrests] = useState([])
+    useEffect(() => {
+        fetch('restTimes.json')
+        .then(res => res.json())
+        .then(data => setrests(data))
+    },[])
+
+
     return (
         <div className='info-bar'>
             <div className='user-profile'>
@@ -24,11 +32,14 @@ const Info = (props) => {
             <div className='break-container'>
                 <h4 className='info-h4'>Add a break</h4>
                 <div className='breaks'>
-                    <button className='break-btn'>10m</button>
-                    <button className='break-btn'>20m</button>
-                    <button className='break-btn'>30m</button>
-                    <button className='break-btn'>45m</button>
-                    <button className='break-btn-h'>1h</button>
+                    {
+                        rests.map(rest => <Rest
+                            key={rest.uniqueID}
+                            uniqueID={rest.uniqueID}
+                            minute={rest.minute}>
+                            
+                            </Rest>)
+                    }
                 </div>
             </div>
             <div className='reading-info'>
@@ -39,8 +50,8 @@ const Info = (props) => {
                     <p><span>{reqTime}</span> hrs</p>    
                     </div>
                     <div className='time-count-div'>
-                    <p>Reading time</p>    
-                    <p>Reading</p>    
+                    <p>Rest time</p>    
+                    <p><span>00</span></p>    
                     </div>
                 </div>
             </div>
