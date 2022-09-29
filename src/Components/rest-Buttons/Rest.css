@@ -1,10 +1,8 @@
 .break-btn{
-    display: flex;
-    flex-direction: column;
     border: none;
     color: white;
     background-color: #1279dadc;
-    padding: 10px 10px;
+    padding: 10px 5px;
     border-radius: 70%;
 }
 .break-btn:hover{

@@ -15,3 +15,28 @@
 .verse{
     color: #1babdf;
 }
+@media only screen and (max-width: 600px) {
+    .header-container img{
+        width: 10%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .header-container img{
+        width: 8%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header-container img{
+        width: 6%;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .header-container img{
+        width: 6%;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .header-container img{
+        width: 6%;
+    }
+}

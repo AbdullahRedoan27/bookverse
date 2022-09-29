@@ -5,7 +5,7 @@ const Rest = (props) => {
     const { uniqueID, minute } = props;
     return (
         <div>
-            <button className='break-btn'>{minute}</button>
+            <button className='break-btn'>{minute}m</button>
         </div>
     );
 };

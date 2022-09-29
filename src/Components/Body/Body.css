@@ -7,3 +7,35 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media only screen and (max-width: 600px) {
+    .body-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .book-container{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    .body-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .book-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .body-container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    .book-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
