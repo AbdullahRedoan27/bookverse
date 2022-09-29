@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Info from '../info-area/Info';
 import Cards from '../main-cards/Cards';
+import Questions from '../Questions/Questions';
 import './Body.css'
 
 const Body = () => {
@@ -32,6 +33,7 @@ const Body = () => {
                 </div>
                 <div className="info-area">
                     <Info carts={carts}></Info>
+                    <Questions></Questions>
                 </div>
             </div>
         </div>
