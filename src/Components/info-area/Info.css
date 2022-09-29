@@ -43,4 +43,16 @@
     background-color: #12a4da15;
     margin-top: 10px;
     border-radius: 10px;
+    margin-bottom: 15px;
+}
+.complete-btn{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    background-color:  #1279dadc;
+    color: white;
+}
+
+.complete-btn:hover{
+    background-color: #0264d4a8;
 }

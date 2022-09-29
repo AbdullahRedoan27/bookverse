@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import user from '../../images/student-4.png'
 import '../info-area/Info.css'
 import Rest from '../rest-Buttons/Rest';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Info = (props) => {
     const { carts } = props;
@@ -32,6 +34,9 @@ const Info = (props) => {
 
     }
 
+    const difftoast = () => {
+        toast("Wow You have finished the books!");
+    }
     return (
         <div className='info-bar'>
             <div className='user-profile'>
@@ -70,6 +75,18 @@ const Info = (props) => {
                     </div>
                 </div>
             </div>
+                    <div><button onClick={difftoast} className='complete-btn'>Completed</button></div>
+            <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            />
         </div>
     );
 };
