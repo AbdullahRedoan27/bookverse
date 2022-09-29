@@ -4,7 +4,12 @@ import '../info-area/Info.css'
 
 const Info = (props) => {
     console.log(props);
-   
+    const { carts } = props;
+    let reqTime = 0;
+    for (const cart of carts) {
+        reqTime = reqTime + parseFloat(cart.time)
+        console.log(cart.time)
+    }
     return (
         <div className='info-bar'>
             <div className='user-profile'>
@@ -31,7 +36,7 @@ const Info = (props) => {
                 <div>
                     <div className='time-count-div'>
                     <p>Reading time</p>    
-                    <p><span>00</span> hrs</p>    
+                    <p><span>{reqTime}</span> hrs</p>    
                     </div>
                     <div className='time-count-div'>
                     <p>Reading time</p>    
