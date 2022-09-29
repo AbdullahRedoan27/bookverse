@@ -1,0 +1,31 @@
+.card-container{
+    border: 3px solid;
+    margin: 20px;
+    border-radius: 2%;
+}
+
+.card-container img{
+    height: 50%;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 5%;
+    border-radius: 10%;
+}
+
+.card-texts{
+    padding-left: 2%;
+}
+
+.btns{
+    padding-left: 7%;
+}
+
+.btn-add{
+    width: 90%;
+    padding: 10px 0; 
+    color: white;
+}
+
+.btn-add:hover{
+    background-color: black;
+}

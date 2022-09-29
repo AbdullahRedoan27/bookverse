@@ -5,7 +5,7 @@
         "image": "https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg",
         "writer": "J.R.R. TOLKIEN",
         "type":"High-fantasy novel",
-        "time":"37 hours (250 wpm)",
+        "time":"37h",
         "description": "It centers around an all powerful ring forged by the Dark Lord Sauron."
     }
     ,
@@ -15,7 +15,7 @@
         "image": "https://orion-uploads.openroadmedia.com/sm_9333ba5b72d2-hp.jpg",
         "writer": "J.K. ROWLING",
         "type":"Novel",
-        "time":"2 hours (250 wpm)",
+        "time":"2h",
         "description": "Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts."
     }
     ,
@@ -25,7 +25,7 @@
         "image": "https://orion-uploads.openroadmedia.com/sm_c19ae1-the-lion-the-witch-and-the-wardrobe-book.jpg",
         "writer": "C.S. LEWIS",
         "type":"Novel",
-        "time":"2 hours (250 wpm)",
+        "time":"2h",
         "description": "The story unfolds when the four Pevensie children are evacuated from England during wartime to stay in the old house of a kind professor."
     }
     ,
@@ -35,17 +35,17 @@
         "image": "https://book-assets.openroadmedia.com/9781497679276.jpg",
         "writer": "CARLO COLLODI",
         "type":"High-fantasy novel",
-        "time":"1 hours 40 minutes (250 wpm)",
+        "time":"1h",
         "description": "This tale follows a marionette boy, Pinocchio, crafted out of a talking log by the poor woodcarver, Gepetto."
     }
     ,
     {
         "id":"05",
         "name": "Catcher in the Rye",
-        "image": "https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg",
+        "image": "https://orion-uploads.openroadmedia.com/sm_2f32b6-catcher-in-the-rye-red.jpg",
         "writer": "J.D. SALINGER",
         "type":"Novel",
-        "time":"4.5 hours (250 wpm)",
+        "time":"4h",
         "description": "This novel, narrated by the iconic 16-year-old rebel Holden Caulfield, is a staple in more than just tenth grade English classrooms across America."
     }
     ,
@@ -55,7 +55,7 @@
         "image": "https://book-assets.openroadmedia.com/9781497684232.jpg",
         "writer": "JULES VARNE",
         "type":"Science-fiction",
-        "time":"5 hours (250 wpm)",
+        "time":"5h",
         "description": "In the freedom of the vast ocean, Aronnax and the others see beauties of the sea that they never could have fathomed."
     }
 
